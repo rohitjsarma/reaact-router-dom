@@ -23,7 +23,7 @@ let Navbar = () => {
                                 <Link to="/pure" className="nav-link">Pure Component</Link>
                             </li>
                             <li className="nav-item px-2">
-                                <Link to="/fd" className="nav-link">FormData </Link>
+                                <Link to="/post" className="nav-link">Post Api</Link>
                             </li>
                             
                             <li className="nav-item px-2">

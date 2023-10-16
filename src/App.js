@@ -4,8 +4,8 @@ import {About}  from './components/About';
 import Getapi from './components/Getapi';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
-import FormDataForm from './components/FormData';
 import Pure from './components/Purecomponent';
+import CreateProduct from './components/Postapi';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/get" element={<Getapi/>} />
           <Route path='/form' element={<Form/>}/>
-          <Route path='/fd' element={<FormDataForm/>}/>
+          <Route path='/post' element={<CreateProduct/>}/>
           <Route path='/pure' element={<Pure/>}/>
         </Routes>
       

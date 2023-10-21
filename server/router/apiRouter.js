@@ -12,7 +12,7 @@ router.get('/products', async (request , response) => {
     try {
         let products = await Product.find();
         response.status(200).json(products);
-    }
+    }  
     catch (err) {
         console.error(err);
         response.status(500).json({

@@ -25,6 +25,9 @@ let Navbar = () => {
                             <li className="nav-item px-2">
                                 <Link to="/post" className="nav-link">Post Api</Link>
                             </li>
+                            <li className="nav-item px-2">
+                                <Link to="/context" className="nav-link">useContext</Link>
+                            </li>
                             
                             <li className="nav-item px-2">
                                 <Link to="/about" className="nav-link">About</Link>

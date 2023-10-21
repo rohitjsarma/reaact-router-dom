@@ -14,6 +14,8 @@ let CreateProduct = () => {
     let [submitted , setSubmitted] = useState(false);
     let [errorMessage , setErrorMessage] = useState('');
 
+    console.log(errorMessage)
+
     // changeInput
     let changeInput = (event) => {
         setProduct({

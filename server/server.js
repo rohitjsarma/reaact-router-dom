@@ -26,14 +26,16 @@ app.get('/', (request , response) => {
 mongoose.connect(process.env.MONGO_DB_LOCAL_URL, {
     useUnifiedTopology : true,
     useNewUrlParser : true,
-    useFindAndModify : false,
-    useCreateIndex : true
+    
+    //useFindAndModify : false,
+    //useCreateIndex : true
 }).then((response) => {
     console.log(`Connected to Mongo DB Successfully...........`);
 }).catch((err) => {
     console.error(err);
     process.exit(1); // stop the node js process if unable to connect to mongodb
 });
+
 
 // configure the router
 app.use('/api', require('./router/apiRouter'));
